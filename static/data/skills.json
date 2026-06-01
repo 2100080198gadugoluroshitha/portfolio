@@ -1,0 +1,93 @@
+[
+  {
+    "name": "HTML",
+    "image": "media/skills/html.svg",
+    "height": "50px"
+  },
+  {
+    "name": "CSS",
+    "image": "media/skills/css.svg",
+    "height": "50px"
+  },
+  {
+    "name": "JavaScript",
+    "image": "media/skills/javascript.svg",
+    "height": "50px"
+  },
+  
+  {
+    "name": "Python",
+    "image": "media/skills/python.svg",
+    "height": "50px"
+  },
+  
+  {
+    "name": "Node.js",
+    "image": "media/skills/nodejs.svg",
+    "height": "45px"
+  },
+  {
+    "name": "Express",
+    "image": "media/skills/express.svg",
+    "height": "25px"
+  },
+  {
+    "name": "C#",
+    "image": "media/skills/Logo_C_sharp.svg.png",
+    "height": "80px"
+  },
+  {
+    "name": "Aws",
+    "image": "media/skills/Amazon_Web_Services_Logo.svg.png",
+    "height": "80px"
+  },
+  {
+    "name": "Java",
+    "image": "media/skills/java-4-logo.svg",
+    "height": "80px"
+  },
+  {
+    "name": "Machine Learning",
+    "image": "media/skills/Hey_Machine_Learning_Logo.png",
+    "height": "80px"
+  },
+  {
+    "name": "Data Structures",
+    "image": "media/skills/ds.png",
+    "height": "80px"
+  },
+  {
+    "name": "C",
+    "image": "media/skills/cc.svg",
+    "height": "80px"
+  },
+  {
+    "name": "MySQL",
+    "image": "media/skills/mysql.svg",
+    "height": "80px"
+  },
+{
+    "name": "Selenuim",
+    "image": "media/skills/Selenium_Logo.svg.png",
+    "height": "80px"
+  },
+  
+   {
+    "name": "PowerBI",
+    "image": "media/skills/New_Power_BI_Logo.svg.png",
+    "height": "80px"
+  },
+  {
+    "name": "Azure",
+    "image": "media/skills/Microsoft_Azure.svg.png",
+    "height": "80px"
+  },
+  
+  
+  
+  {
+    "name": "Git",
+    "image": "media/skills/git.svg",
+    "height": "50px"
+  }
+]

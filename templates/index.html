@@ -1,0 +1,510 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Roshitha Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Gadugolu Roshitha, portfolio website, software developer"
+    />
+    <meta
+      name="description"
+      content="Software developer portfolio website"
+    />
+    <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url("./media/bg(1).jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  /* Dark overlay so text is visible */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
+  }
+
+  /* Ensure content stays above background */
+  header, main, footer {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+    <meta name="author" content="Gadugolu Roshitha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <!-- Variables -->
+    <link rel="stylesheet" href="{% static 'css/variables.css' %}" />
+    <!-- Animation CSS (we can defer loading since it's non-critical)-->
+    <link
+      rel="preload"
+      href="{% static 'css/animation.css' %}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="{% static 'css/animation.css' %}" /></noscript>
+    <!-- Responsive (needed to be the last CSS import)-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+
+    <!-- navbar start -->
+     
+    <header>
+      <a href="/">
+        <img src="media/c.png" alt="" />
+      </a>
+      <button
+        id="hamburger"
+        onclick="toggleNavbar()"
+        aria-label="Navigation menu"
+      >
+        <div class="patty"></div>
+      </button>
+      <section class="hero">
+  
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home" class="link-btn">Home</a></li>
+          <li><a href="#about" class="link-btn">About</a></li>
+          <li><a href="#experience" class="link-btn">Experience</a></li>
+          <li><a href="#project" class="link-btn">Project</a></li>
+          <li><a href="#education" class="link-btn">Education</a></li>
+          
+          <li><a href="#cert" class="link-btn">Certificates</a></li>
+          <li><a href="#skills" class="link-btn">Skills</a></li>
+          <li><a href="#footer" class="link-btn">Contact</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section id="home">
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h1>Gadugolu Roshitha</h1>
+        <p>I'm <span class="typing"></span></p>
+        <ul class="social">
+          <li>
+            <a
+              href="https://github.com/2100080198gadugoluroshitha"
+              target="_blank"
+              class="link-btn github"
+              aria-label="Github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/roshitha-gadugolu/"
+              target="_blank"
+              class="link-btn linkedin"
+              aria-label="Linkedin link"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <main>
+      <!-- about section start -->
+      <section id="about" class="container reveal">
+  <h2>ABOUT <span>ME</span></h2>
+
+  <div class="content">
+    <img src="media/passport.png" alt="profile" />
+
+    <p>
+      I am Gadugolu Roshitha, an entry-level software developer with a strong foundation 
+      in AI and Data Science, graduated from KL University (CGPA: 9.54). 
+      I am skilled in Python, Java, C, and web technologies like HTML, CSS, JavaScript,
+      and Node.js. I have hands-on experience through internships and projects, including
+      machine learning and a voice-based email system. I am currently working as an Associate
+      Software Engineer at Fusion5 and eager to contribute to real-world software solutions 
+      while continuously learning.
+    </p>
+  </div>
+
+  <!-- Resume Button -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="media/resume_roshitha.pdf" target="_blank"
+       style="
+         display:inline-block;
+         padding:10px 20px;
+         background:red;
+         color:white;
+         text-decoration:none;
+         border-radius:8px;
+         font-weight:bold;
+         transition:0.3s;
+         box-shadow:0 0 10px rgba(255,0,0,0.5);
+       "
+       onmouseover="this.style.transform='scale(1.1)'; this.style.background='darkred';"
+       onmouseout="this.style.transform='scale(1)'; this.style.background='red';">
+       View Resume
+    </a>
+  </div>
+</section>
+      <!-- about section end -->
+
+      <!-- experience section start -->
+      <section id="experience" class="container">
+        <h2>EXPERIENCE</h2>
+        <div class="timeline">
+          <div class="checkpoint">
+            <div>
+              <h3>LtiMindTree</h3>
+              <h4>Graduate Engineer Trainee</h4>
+              <p>June 2025 – July 2025</p>
+            </div>
+            </div>
+            <div class="checkpoint">
+              <div>
+              <h3>Campalin Innovations</h3>
+              <h4>Machine Learning</h4>
+              <p>May 2023 – June 2023</p>
+            </div>
+          </div>
+          <div class="checkpoint">
+            <div>
+              <h3>AICTE </h3>
+              <h4>AWS Virtual internship </h4>
+              <p>May 2023 – June 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- experience section end -->
+
+      <!-- project section start -->
+<section id="project" class="container reveal">
+  <h2>PROJECT</h2>
+
+  <div class="content" style="display:flex; gap:25px; flex-wrap:wrap; justify-content:center;">
+
+    <!-- Project 1 -->
+    <a class="card" href="https://github.com/2100080198gadugoluroshitha" target="_blank"
+       style="position:relative; width:320px; height:300px; border-radius:12px; overflow:hidden; color:white;">
+
+      <div class="image" style="background:url('media/email.jpg') center/cover no-repeat; width:100%; height:100%;"></div>
+
+      <div class="overlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:flex-end;">
+        <div style="padding:15px;">
+          <h3>Voice Based Email for Blind</h3>
+          <p>
+             Implemented speech recognition technology achieving an accuracy rate of 95% for hands-free email 
+composition and management. 
+Engineered natural language understanding resulting in increase in user efficiency for navigating, composing, 
+and managing emails.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 2 -->
+    <a class="card" href="#" target="_blank"
+       style="position:relative; width:320px; height:300px; border-radius:12px; overflow:hidden; color:white;">
+
+      <div class="image" style="background:url('media/retail.jpg') center/cover no-repeat; width:100%; height:100%;"></div>
+
+      <div class="overlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:flex-end;">
+        <div style="padding:15px;">
+          <h3>Retail Insight Generator</h3>
+          <p>
+           Developed a comprehensive End-to-End Language Model (LLM) project tailored for a retail sector, 
+specifically a t- shirt selling store. 
+ Leveraging a SQL Database chain within Lang chain framework, supplemented by few-shot learning 
+techniques, the endeavour aims to construct a robust question and answer system. 
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a class="card" href="https://github.com/2100080198gadugoluroshitha" target="_blank"
+       style="position:relative; width:320px; height:300px; border-radius:12px; overflow:hidden; color:white;">
+
+      <div class="image" style="background:url('media/lib.jpg') center/cover no-repeat; width:100%; height:100%;"></div>
+
+      <div class="overlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:flex-end;">
+        <div style="padding:15px;">
+          <h3>Library Management System</h3>
+          <p>
+            A Library Management System is a project that manages book records, user details,
+            and borrowing activities in an organized way. It automates tasks like issuing,
+            returning, and tracking books, making library operations faster and more efficient.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+<!-- project section end -->
+
+<!-- education section start -->
+<section id="education" class="container reveal">
+  <h2>EDUCATION</h2>
+  <div class="content">
+    
+    <!-- B.Tech -->
+    <p>
+      Bachelor of Technology in Artificial Intelligence & Data Science  
+      <span class="major">KL University</span>
+    </p>
+    <p class="year-taken">
+      July 2021 &mdash; August 2025 | CGPA: 9.54
+      <a href="media/btech-marks.pdf" target="_blank"
+         style="margin-left:10px; padding:5px 12px; background:#00adb5; color:white; border-radius:6px; text-decoration:none; font-size:14px;">
+         View 
+      </a>
+    </p>
+
+    <br>
+
+    <!-- Intermediate -->
+    <p>
+      Board of Intermediate Education (MPC)  
+      <span class="major">Sri Chaitanya College</span>
+    </p>
+    <p class="year-taken">
+      March 2019 &mdash; May 2021 | CGPA: 9.6
+      <a href="media/inter-marks.pdf" target="_blank"
+         style="margin-left:10px; padding:5px 12px; background:#00adb5; color:white; border-radius:6px; text-decoration:none; font-size:14px;">
+         View 
+      </a>
+    </p>
+
+    <br>
+
+    <!-- Intermediate -->
+    <p>
+      Secondary School Certificate 
+      <span class="major">Ravindra Bharathi School</span>
+    </p>
+    <p class="year-taken">
+      Febraury 2018 &mdash; May 2019 | CGPA: 9.7
+      <a href="media/inter-marks.pdf" target="_blank"
+         style="margin-left:10px; padding:5px 12px; background:#00adb5; color:white; border-radius:6px; text-decoration:none; font-size:14px;">
+         View 
+      </a>
+    </p>
+
+  </div>
+</section>
+
+<section id="cert" class="container reveal" style="background:black; padding:30px;">
+  <h2 style="text-align:center; color:white;">CERTIFICATES</h2>
+
+  <style>
+    @keyframes fadeUp {
+      0% { opacity:0; transform:translateY(40px); }
+      100% { opacity:1; transform:translateY(0); }
+    }
+
+    @keyframes borderGlow {
+      0% { box-shadow:0 0 5px red; }
+      50% { box-shadow:0 0 20px red; }
+      100% { box-shadow:0 0 5px red; }
+    }
+
+    @keyframes shine {
+      0% { left:-100%; }
+      100% { left:100%; }
+    }
+
+    .cert-box {
+      position:relative;
+      background:#111;
+      color:white;
+      padding:20px;
+      border-radius:12px;
+      margin:15px;
+      width:300px;
+      overflow:hidden;
+      animation: fadeUp 0.8s ease forwards, borderGlow 3s infinite;
+      transition:0.4s;
+    }
+
+    .cert-box::before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:-100%;
+      width:50%;
+      height:100%;
+      background:linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
+      transform:skewX(-20deg);
+      animation: shine 3s infinite;
+    }
+
+    .cert-box:hover {
+      transform:translateY(-10px) scale(1.05);
+    }
+
+    .cert-title {
+      color:red;
+      font-weight:600;
+      opacity:0;
+      animation: fadeUp 0.8s ease forwards;
+      animation-delay:0.3s;
+    }
+
+    .cert-btn {
+      display:inline-block;
+      margin-top:10px;
+      padding:6px 12px;
+      background:red;
+      color:white;
+      border-radius:6px;
+      text-decoration:none;
+      transition:0.3s;
+      opacity:0;
+      animation: fadeUp 0.8s ease forwards;
+      animation-delay:0.6s;
+    }
+
+    .cert-btn:hover {
+      transform:scale(1.1);
+      background:darkred;
+    }
+  </style>
+
+  <div class="content" style="display:flex; flex-wrap:wrap; justify-content:center;">
+
+    <div class="cert-box" style="animation-delay:0.2s;">
+      <p class="cert-title">AI Associate-Salesforce</p>
+      <a href="media/salesforce.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="cert-box" style="animation-delay:0.4s;">
+      <p class="cert-title">Automation Anywhere Certified Essentials RPA Professional</p>
+      <a href="media/rpa.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="cert-box" style="animation-delay:0.6s;">
+      <p class="cert-title">Google Cloud Certified Associate Cloud Engineer</p>
+      <a href="media/google.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="cert-box" style="animation-delay:0.8s;">
+      <p class="cert-title">APSSDC - Python</p>
+      <a href="media/pcap.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- education section end -->
+      <!-- education section end -->
+
+      <!-- skills section start -->
+      <section id="skills" class="container">
+        <h2>SKILLS</h2>
+
+        <div class="content">
+          <!-- <figure class="skill">
+            <img src="assets/skills/react.svg" alt="React" />
+            <figcaption>React</figcaption>
+          </figure> -->
+        </div>
+      </section>
+      <!-- skills section end -->
+    </main>
+
+    <!-- footer section start -->
+    <footer id="footer">
+      <div class="content">
+        <h2>Roshitha's portfolio</h2>
+        <p>Connect with me for more information.</p>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a
+            href="https://github.com/2100080198gadugoluroshitha"
+            target="_blank"
+            class="link-btn"
+            aria-label="Github link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/roshitha-gadugolu/"
+            target="_blank"
+            class="link-btn"
+            aria-label="Linkedin link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <span>roshithagadugolu123@gmail.com</span>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>
+            <span>+91 8143501072</span>
+          </li>
+          <li>
+            <i class="fa fa-map-marked-alt"></i>
+            <span>Kalavalapalli 534301,Andhra Pradesh</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- ======================== Scripts ======================== -->
+
+    <!-- Particle JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- JS source -->
+    <script src="static/js/index.js"></script>
+  </body>
+</html>
